@@ -1,0 +1,101 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 1,
+  'opsz' 48;
+  color:red;
+  cursor: pointer;
+}
+#edit {
+    color:green;
+    margin-right:10px;
+}
+
+
+body{
+    margin:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #aaa;
+    
+}
+.container {
+    color:#666777;
+    height:100vh;
+    margin:0 auto;
+    position:relative;
+}
+form{
+    width: 500px;
+    max-width: 100%;
+}
+
+.create  {
+    /* width:600px; */
+    max-width:100%;
+    max-height:100%;
+    background-color: white;;
+    margin-bottom: 60px;;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+   
+    padding:20px;
+    justify-content: center;
+    align-items: start;
+}
+.edit {
+    /* width:600px; */
+    max-width:100%;
+    max-height:100%;
+    background-color: white;;
+    margin-bottom: 60px;;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);  
+    padding:20px;
+    justify-content: center;
+    align-items: start;
+    
+}
+.btn-btn {
+    display: inline-block !important;
+    width: fit-content;
+    padding: 10px 60px;
+    font-size: 24px;
+    background: #009688;
+    color: white;
+    border: none;
+}
+
+.input {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 20px;;
+    /* width:500px;
+    max-width:100%; */
+
+}
+.input input {
+    padding: 8px;
+    font-size: 16px;
+    outline: none;
+}
+.input label {
+    margin-bottom: 5px;
+    font-size: 19px;
+    font-weight:400;
+    color:#666777;
+}

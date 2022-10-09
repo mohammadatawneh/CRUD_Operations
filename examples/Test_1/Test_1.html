@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Store and retrieve data from local storage.</h2>
+    <div id="demo">
+
+    </div>
+    <script>
+    const myObj = {
+        name:"mohammad Atawneh",
+        age:"23",
+        favoriteColors:['black', "yello", "white"]
+    }
+    myJosn = JSON.stringify(myObj);
+    localStorage.setItem("testJson", myJosn);
+
+    let text = localStorage.getItem("testJson");
+    let obj = JSON.parse(text);
+
+    document.getElementById("demo").innerHTML = obj.name +"<br>"+ obj.age + "<br>" + obj.favoriteColors; 
+
+    const myarr =["Mohammad Atawneh", 23, "mod@gmail.com", ["red", "yellow"], {studenttId:32, studentName: "Atawneh"}];
+    const myJSON = JSON.stringify(myarr);
+    localStorage.setItem("specialUser", myJSON);
+    text = localStorage.getItem("specialUser");
+    obj = JSON.parse(text);
+    document.getElementById("demo").innerHTML = obj[4].studentName;
+    </script>
+</body>
+</html>
